@@ -4,16 +4,16 @@ import io
 import math
 input = open(file = 'in.txt', mode = 'r')
 
-def portal_arctan(x1,y1):
+def portal_arctan(x1, y1):
     if ((x1 == a['x']) & (y1 == a['y'])):
         return 'NULL'
-    if (x1-a['x'] <= 0):
-        return math.degrees(math.pi + math.atan((y1-a['y'])/(x1-a['x'])))
+    if ((x1 - a['x']) <= 0):
+        return math.degrees(math.pi + math.atan( (y1 - a['y']) / (x1 - a['x']) ))
     else:
-        if (y1-a['y'] <= 0):
-            return math.degrees(2*math.pi + math.atan((y1-a['y'])/(x1-a['x'])))
+        if ((y1 - a['y']) <= 0):
+            return math.degrees(2 * math.pi + math.atan( (y1 - a['y']) / (x1 - a['x']) ))
         else:
-            return math.degrees(math.atan((y1-a['y'])/(x1-a['x'])))
+            return math.degrees(math.atan( (y1 - a['y']) / (x1 - a['x']) ))
 
 c = re.compile(r'([a-zA-ZА-Яа-я 0-9]*):(.*=(\d*\.\d*)\,(\d*\.\d*))$')
 #str = 'Шайба 1:ttps://www.ingress.com/intel?ll=59.865616,29.925498&z=16&pll=59.864079,29.92424'
