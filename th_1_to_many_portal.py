@@ -16,7 +16,8 @@ while ((b['x'] * b['y']) != 0):
     a['x'] = float(tuples[0][2])
     a['y'] = float(tuples[0][1])
     a['name'] = tuples[0][0]
-    print ('Портал основа: ',a['name'],"X:",a['x'],"Y:",a['y'])
+    print ('\n\nПортал основа: ',)
+    print (a['name'],"X:",a['x'],"Y:",a['y'],'\n')
     while ((b['x'] * b['y']) != 0):
         s = input.readline()
         tuples = re.findall(c, s)
@@ -26,4 +27,4 @@ while ((b['x'] * b['y']) != 0):
 #        print (b['name'],"X:",b['x'],"Y:",b['y'])
         if ((b['x'] * b['y']) != 0):
             print ('Link: {0:7}--> {1:15} th(a)={2:18}'.format(a['name'],b['name'],(b['y']-a['y'])/(b['x']-a['x'])))
-    print ('end.' )   
+    print ('end.\n' )   
